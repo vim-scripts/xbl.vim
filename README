@@ -1,0 +1,26 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1153
+
+Syntax highlighting for Extensible Binding Language (XBL). The main purpose of the script is to syntax highlight javascript code contained in CDATA blocks.
+
+The script is a hack; my understanding of VIM scripting is almost nil. I look forward to improvements made by anyone.
+
+To have vim detect the file type from files with the .xbl extension,
+just add the following two lines to the "filetype.vim" file in the
+directory that contains the "syntax" directory:
+
+" XBL
+au BufNewFile,BufRead *.xbl   setf xbl
+
+To have xbl syntax coloration appear in the syntax drop-down menu, just
+add the line:
+ 
+an 50.120.240 &Syntax.WXYZ.XBL :cal SetSyn("xbl")<CR>
+
+to the "synmenu.vim" file (the value 240 in 50.120.240 might differ
+according to what is already in your own file).
+
+-- Thanks to Xavier Grosjean <xavcap AT c-est-simple DOT com> for
+information on file type detection and menu updating.
+
+Use ":set syntax=xbl" to turn it on for non-xbl files after the file is opened.
+
