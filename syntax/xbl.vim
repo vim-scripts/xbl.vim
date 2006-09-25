@@ -1,9 +1,8 @@
 " Vim syntax file
 " Language:	XBL build file (xml)
-" Maintainer:	Johannes Zellner <johannes@zellner.org>
-" Last Change:	Tue Apr 27 13:05:59 CEST 2004
-" Filenames:	build.xml
-" $Id: $
+" Maintainer:	Kurt M. Brown, http://www.x2ii.info, <kurtb149@yahoo.com>
+" Last Change:  2006-09-25 15:00:00
+" $Id: xbl.vim 40 2006-09-25 19:36:50Z unicinfo $
 
 " Quit when a syntax file was already loaded
 if exists("b:current_syntax")
@@ -50,4 +49,4 @@ let b:current_syntax = "xbl"
 let &cpo = s:xbl_cpo_save
 unlet s:xbl_cpo_save
 
-" vim: ts=8
+" vim: ts=4
